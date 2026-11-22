@@ -1,0 +1,7 @@
+[2026-11-22T13:51:27Z] === AST ITERATION 1 START | repo=cloudflare/zlib sha=b7bc3884 ===
+[2026-11-22T13:51:27Z] [iter=1] PHASE START: ast repo=cloudflare/zlib sha=b7bc3884
+[2026-11-22T13:51:27Z] [iter=1] Building AST aggregate chunks
+[2026-11-22T13:53:21Z] [iter=1] AST chunks built count=1 triples=924809
+[2026-11-22T13:53:21Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/b7bc38845416febaba0d3736fec890750ad9fb28/.complete
+[2026-11-22T13:53:21Z] [iter=1] PHASE END: ast elapsed_s=114 elapsed_min=1.9
+[2026-11-22T13:53:21Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
