@@ -1,0 +1,30 @@
+[2026-11-22T13:55:10Z] === ENRICH ITERATION 1 START | repo=cloudflare/zlib sha=b7bc3884 ===
+[2026-11-22T13:55:10Z] [iter=1] PHASE START: enrich repo=cloudflare/zlib sha=b7bc3884 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b7bc3884-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b7bc38845416febaba0d3736fec890750ad9fb28.nq.gz
+[2026-11-22T13:55:10Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T13:55:20Z] [iter=1] AST store loaded triples=924809 load_secs=10 mem_mb=800 MB
+[2026-11-22T13:55:20Z] [iter=1] Step 2: Finding LSP targets mem_mb=800 MB
+[2026-11-22T13:55:21Z] [iter=1] LSP targets found call_sites=3942 imports=120 extends=9 implements=0 secs=0
+[2026-11-22T13:55:21Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=800 MB
+[2026-11-22T13:55:24Z] [iter=1] Position index built positions=58486 nodes_with_types=67588 secs=3 mem_mb=800 MB
+[2026-11-22T13:55:24Z] [iter=1] Step 3: Starting LSP resolution mem_mb=800 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T13:55:24Z] [iter=1] Resolving target type target_type=call_site count=3942
+[2026-11-22T13:55:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=2 resolved=304 errors=0 current=contrib/minizip/mztools.c
+[2026-11-22T13:56:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=4 resolved=590 errors=0 current=contrib/infback9/infback9.c
+[2026-11-22T13:57:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=8 resolved=936 errors=0 current=test/minigzip.c
+[2026-11-22T13:58:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=11 resolved=1361 errors=0 current=contrib/minizip/unzip.c
+[2026-11-22T13:59:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=12 resolved=1532 errors=0 current=examples/zpipe.c
+[2026-11-22T13:59:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=18 resolved=1843 errors=0 current=test/example.c
+[2026-11-22T14:00:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=21 resolved=2200 errors=0 current=contrib/minizip/crypt.h
+[2026-11-22T14:01:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=24 resolved=2417 errors=0 current=contrib/iostream3/zfstream.h
+[2026-11-22T14:01:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=32 resolved=2667 errors=0 current=infback.c
+[2026-11-22T14:02:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=35 resolved=2888 errors=0 current=contrib/puff/puff.c
+[2026-11-22T14:02:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=41 resolved=3104 errors=0 current=adler32.c
+[2026-11-22T14:03:12Z] [iter=1] Target type resolved target_type=call_site resolved=3220 errors=3942 secs=468 mem_mb=800 MB
+[2026-11-22T14:03:12Z] [iter=1] Resolving target type target_type=import_statement count=120
+[2026-11-22T14:03:12Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=8.0 files_done=0 resolved=0 errors=0 current=contrib/minizip/miniunz.c
+[2026-11-22T14:03:15Z] [iter=1] Target type resolved target_type=import_statement resolved=83 errors=120 secs=3 mem_mb=800 MB
+[2026-11-22T14:03:15Z] [iter=1] Resolving target type target_type=extends_clause count=9
+[2026-11-22T14:03:17Z] [iter=1] Target type resolved target_type=extends_clause resolved=9 errors=0 secs=2 mem_mb=800 MB
+[2026-11-22T14:04:50Z] [iter=1] Step 5: Writing final enrichment file triples=37731
+[2026-11-22T14:04:50Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b7bc38845416febaba0d3736fec890750ad9fb28.nq.gz size_kb=656
+[2026-11-22T14:04:50Z] [iter=1] PHASE END: enrich elapsed_s=580 elapsed_min=9.7 total_triples=37731
